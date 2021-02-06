@@ -1,9 +1,9 @@
 class Agency:
-    def __init__(self):
-        self.registeration_number = 0
-        self.name = ""
-        self.website = ""
-        self.telephones = []
+    def __init__(self, registeration_number, name, telephones, website=""):
+        self.registeration_number = registeration_number
+        self.name = name
+        self.website = website
+        self.telephones = telephones
 
     def getRegisterationNumber(self):
         return self.registeration_number
@@ -26,5 +26,3 @@ class Agency:
         self.telephones.append(telephone)
     def removeTelephone(self, telephone):
         self.telephones.remove(telephone)
-
-    
