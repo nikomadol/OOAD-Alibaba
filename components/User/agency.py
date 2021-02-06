@@ -39,6 +39,6 @@ class Agency(User):
     def removeTelephone(self, telephone):
         if telephone in self.telephones:
             self.telephones.remove(telephone)
-            return "removed"
+            return True
         else:
-            return "this telephone does not exist!"
+            return False
