@@ -1,4 +1,4 @@
-from ...shared.user import User
+from .user import User
 class Agency(User):
     def __init__(self,
         username,
