@@ -1,6 +1,6 @@
-import enum
+from enum import Enum
 
-class Country(enum.Enum):
+class Country(Enum):
     IRAN = 1
     CANADA = 2
     TURKEY = 3

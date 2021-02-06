@@ -1,4 +1,4 @@
-from seat import Seat
+from .seat import Seat
 class TrainSeat(Seat):
     def __init__(self,
         seatNumber,

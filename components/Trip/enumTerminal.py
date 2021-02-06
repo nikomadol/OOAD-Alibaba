@@ -1,7 +1,7 @@
-import enum
+from enum import Enum
 
-class Terminal(enum.Enum):
+class Terminal(Enum):
     TEHRAN = 1
-    AHVAZ = 2
+    AHWAZ = 2
     SHIRAZ = 3
     KERMAN = 4

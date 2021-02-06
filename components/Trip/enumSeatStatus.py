@@ -1,5 +1,5 @@
-import enum
+from enum import Enum
 
-class City(enum.Enum):
+class City(Enum):
     FREE = 1
     OCCUPIED = 2

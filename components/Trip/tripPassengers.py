@@ -5,7 +5,7 @@ class PassengersSeat:
 
     def setTrip(self, trip):
         self.trip = trip
-    def getTrtip(self, trip):
+    def getTrip(self, trip):
         return self.trip
 
     def setPassengersSeat(self, passengersSeat):

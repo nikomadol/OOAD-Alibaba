@@ -1,12 +1,12 @@
 class Agency:
-    def __init__(self, registeration_number, name, telephones, website=""):
-        self.registeration_number = registeration_number
+    def __init__(self, registration_number, name, telephones, website=""):
+        self.registration_number = registration_number
         self.name = name
         self.website = website
         self.telephones = telephones
 
-    def getRegisterationNumber(self):
-        return self.registeration_number
+    def getRegistrationNumber(self):
+        return self.registration_number
     
     def setName(self, name):
         self.name = name
