@@ -1,4 +1,5 @@
-class Passenger:
+from ...shared.user import User
+class Passenger(User):
     def __init__(self,
         phoneNumber,
         firstName,

@@ -1,4 +1,5 @@
-class Agency:
+from ...shared.user import User
+class Agency(User):
     def __init__(self, registration_number, name, telephones, website=""):
         self.registration_number = registration_number
         self.name = name
@@ -20,9 +21,13 @@ class Agency:
 
     def setTelephones(self, telephones):
         self.telephones = telephones
-    def getTelephone(self):
+    def getTelephones(self):
         return self.telephones
     def addTelephone(self, telephone):
         self.telephones.append(telephone)
     def removeTelephone(self, telephone):
-        self.telephones.remove(telephone)
+        if telephone in self.telephones:
+            self.telephones.remove(telephone)
+            return "removed"
+        else:
+            return "this telephone does not exist!"

@@ -6,11 +6,11 @@ class User:
         avatar,
         password
     ):
-        self.username = ""
-        self.email = ""
-        self.bank_account = ""
-        self.avatar = ""
-        self.password = ""
+        self.username = username
+        self.email = email
+        self.bank_account = bankAccount
+        self.avatar = avatar
+        self.password = password
 
     def setUsername(self, username):
         self.username = username
