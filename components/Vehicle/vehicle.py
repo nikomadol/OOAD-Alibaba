@@ -4,7 +4,7 @@ class Vehicle():
         manufacturer,
         model,
         build_year,
-        capacity,
+        capacity
     ):
         self.manufacturer = manufacturer
         self.model = model
