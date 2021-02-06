@@ -1,6 +1,17 @@
 from ...shared.user import User
 class Agency(User):
-    def __init__(self, registration_number, name, telephones, website=""):
+    def __init__(self,
+        username,
+        email,
+        bankAccount,
+        avatar,
+        password,
+        registration_number,
+        name,
+        telephones,
+        website=""
+    ):
+        super().__init__(username, email, bankAccount, avatar, password)
         self.registration_number = registration_number
         self.name = name
         self.website = website
